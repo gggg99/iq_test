@@ -9,6 +9,8 @@ module.exports.createOrder = async (req, res) => {
     const questions = await Question.find({});
     const incrementResult = utilities.calculateResult(req.body, questions);
     
+12323
+    
     Order.create({
         price: "50.00",
         status: "pending",
