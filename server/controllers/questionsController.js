@@ -1,5 +1,7 @@
 const Question = require('../models/question.js');
 
+dsd
+
 module.exports.getQuestions = async (req, res) => {
     const questions = await Question.find({}, { answer: 0} );
     return res.status(200).json(questions)
